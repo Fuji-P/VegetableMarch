@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>VegetableMarch</title>
+		<meta charset="utf-8" />
+	</head>
+	<style>
+		#canvas {
+			width: 800px;
+			height: 600px;
+			touch-action: none;
+		}
+		#START {
+			position: absolute;
+			left: 200px;
+			top: 200px;
+		}
+	</style>
+	<body onload="init()">
+		<button onclick="location.reload();">Retry</button>
+		<br>
+		<!-- Thanks to http://takao-suenobu.com/ & heep://dova-s.jp/ -->
+		<audio src="bgm.mp3" id="bgm"></audio>
+		<canvas id="canvas" width="800" height="600"></canvas>
+		<img id="START" src="start.png" onclick="go()">
+		<img id="fruitbg" src="fruitbg.png" style="display:none" />
+		<img id="fruit0" src="fruit0.png" style="display:none" />
+		<img id="fruit1" src="fruit1.png" style="display:none" />
+		<img id="fruit2" src="fruit2.png" style="display:none" />
+		<img id="fruit3" src="fruit3.png" style="display:none" />
+		<img id="fruit4" src="fruit4.png" style="display:none" />
+		<script src="Tiny2D.js"></script>
+		<script src="index.js" async defer></script>
+		<canvas id="canvas" width="500" height="600"></canvas>
+	</body>
+</html>
